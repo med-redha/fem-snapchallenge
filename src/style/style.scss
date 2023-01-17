@@ -1,0 +1,52 @@
+@media (max-width: 799px) {
+  .landingPage {
+    .content_sections {
+      .main_section {
+        .header {
+        }
+        .description_txt {
+        }
+        .mainSec_btn {
+        }
+      }
+      .buttom_section {
+      }
+    }
+    .hero_section {
+      .hero_img {
+      }
+    }
+  }
+}
+@media (min-width: 800px) {
+    .landingPage {
+        .content_sections {
+          .main_section {
+            .header {
+            }
+            .description_txt {
+            }
+            .mainSec_btn {
+            }
+          }
+          .buttom_section {
+            width: 500px;
+            height: 300px;
+            display: flex;
+            justify-content: space-evenly;
+            .b_icons{
+              
+                width: 24px;
+                height: 24px;
+              
+            }
+          }
+        }
+        .hero_section {
+          .hero_img {
+            height: 800px;
+            width: 100%;
+          }
+        }
+      }
+}
