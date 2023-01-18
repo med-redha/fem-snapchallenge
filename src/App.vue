@@ -81,20 +81,21 @@
         >
           <template v-slot:activator>
             <v-list-item-content>
-              <v-list-item-title>Admin</v-list-item-title>
+              <v-list-item-title>Features</v-list-item-title>
             </v-list-item-content>
           </template>
 
           <v-list-item
-            v-for="([title, icon], i) in admins"
+            v-for="([title, icon], i) in features"
             :key="i"
             link
           >
-            <v-list-item-title v-text="title"></v-list-item-title>
-
-            <v-list-item-icon>
+          <v-list-item-icon>
               <v-icon v-text="icon"></v-icon>
             </v-list-item-icon>
+            <v-list-item-title v-text="title"></v-list-item-title>
+
+            
           </v-list-item>
         </v-list-group>
         <v-list-group
@@ -104,20 +105,21 @@
         >
           <template v-slot:activator>
             <v-list-item-content>
-              <v-list-item-title>Admin</v-list-item-title>
+              <v-list-item-title>Company</v-list-item-title>
             </v-list-item-content>
           </template>
 
           <v-list-item
-            v-for="([title, icon], i) in admins"
+            v-for="([title, icon], i) in company"
             :key="i"
             link
           >
-            <v-list-item-title v-text="title"></v-list-item-title>
-
-            <v-list-item-icon>
+          <v-list-item-icon>
               <v-icon v-text="icon"></v-icon>
             </v-list-item-icon>
+            <v-list-item-title v-text="title"></v-list-item-title>
+
+            
           </v-list-item>
         </v-list-group>
         <v-list-item
@@ -167,7 +169,11 @@ export default {
         ],
         drawer: false,
 
-        admins: [
+        features: [
+        ['Management', 'mdi-account-multiple-outline'],
+        ['Settings', 'mdi-cog-outline'],
+      ],
+      company: [
         ['Management', 'mdi-account-multiple-outline'],
         ['Settings', 'mdi-cog-outline'],
       ],
