@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;0,500;0,700;0,800;0,900;1,500;1,700;1,800&display=swap");
 @media (max-width: 799px) {
   .landingPage {
     .content_sections {
@@ -19,34 +20,66 @@
   }
 }
 @media (min-width: 800px) {
-    .landingPage {
-        .content_sections {
-          .main_section {
-            .header {
-            }
-            .description_txt {
-            }
-            .mainSec_btn {
-            }
-          }
-          .buttom_section {
-            width: 500px;
-            height: 300px;
-            display: flex;
-            justify-content: space-evenly;
-            .b_icons{
-              
-                width: 24px;
-                height: 24px;
-              
-            }
-          }
+  .landingPage {
+    .content_sections {
+      .main_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 670px;
+        width: 700px;
+        padding: 4px;
+        margin: auto;
+        margin-top: 60px;
+        gap: 20px;
+        .header {
+          font-family: "Epilogue", sans-serif;
+          font-size: 90px;
+          line-height: 7rem;
+          font-weight: 700;
+          width: 600px;
         }
-        .hero_section {
-          .hero_img {
-            height: 800px;
-            width: 100%;
-          }
+        .description_txt {
+          font-family: "Epilogue", sans-serif;
+          font-size: 22px;
+          font-weight: 500;
+          width: 450px;
+          margin: 18px 0px 30px;
+        }
+        .mainSec_btn {
+          font-family: "Epilogue", sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          height: 58px;
+          width: 180px;
+          border-radius: 15px;
+          background-color: hsl(0, 0%, 8%);
+          color: white;
         }
       }
+      .buttom_section {
+        width: 700px;
+        height: 300px;
+        display: flex;
+        gap: 30px;
+
+        justify-content: space-evenly;
+        margin: auto;
+        .v-btn {
+          width: 160px;
+          height: 68px;
+          
+        }
+      }
+    }
+    .hero_section {
+      display: flex;
+      justify-content: center;
+      margin: 82px 0px;
+      .hero_img {
+        height: 700px;
+        width: 80%;
+      }
+    }
+  }
 }

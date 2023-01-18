@@ -14,7 +14,7 @@
           </div>
           <div class="buttom_section">
             
-            <v-btn icon v-for="(icon , index) in icons" :key="index">
+            <v-btn class="icon_holder" icon v-for="(icon , index) in icons" :key="index">
               <img class="b_icon" :src="icon.img" alt=""
             />
             </v-btn>
