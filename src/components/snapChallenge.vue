@@ -1,7 +1,7 @@
 <template>
   <div class="landingPage">
-    <v-row>
-      <v-col cols="6">
+    <v-row class=" hidden-md-and-down">
+      <v-col cols="12" md="6">
         <div class="content_sections">
           <div
             class="main_section"
@@ -10,24 +10,57 @@
           >
             <div class="header">{{ cont.header }}</div>
             <p class="description_txt">{{ cont.description }}</p>
-            <v-btn class="mainSec_btn">{{ cont.mbtn }}</v-btn>
+            <v-hover v-slot="{hover}">
+            <v-btn class="mainSec_btn" :class="hover ? 'main_hover' : ''">{{ cont.mbtn }}</v-btn>
+          </v-hover>
           </div>
           <div class="buttom_section">
-            
-            <v-btn class="icon_holder" icon v-for="(icon , index) in icons" :key="index">
+            <v-btn plain height="68"  class="icon_holder" icon v-for="(icon , index) in icons" :key="index">
               <img class="b_icon" :src="icon.img" alt=""
             />
             </v-btn>
           </div>
         </div>
       </v-col>
-      <v-col cols="6">
+      <v-col cols="12" md="6" >
         <div class="hero_section">
           <img
             class="hero_img"
             src="../assets/images/image-hero-desktop.png"
             alt=""
           />
+        </div>
+      </v-col>
+    </v-row>
+    <v-row class=" hidden-md-and-up">
+      <v-col cols="12" md="6" >
+        <div class="hero_section">
+          <img
+            class="hero_img"
+            src="../assets/images/image-hero-desktop.png"
+            alt=""
+          />
+        </div>
+      </v-col>
+      <v-col cols="12" md="6">
+        <div class="content_sections">
+          <div
+            class="main_section"
+            v-for="(cont, index) in mainSec"
+            :key="index"
+          >
+            <div class="header">{{ cont.header }}</div>
+            <p class="description_txt">{{ cont.description }}</p>
+            <v-hover v-slot="{hover}">
+            <v-btn class="mainSec_btn" :class="hover ? 'main_hover' : ''">{{ cont.mbtn }}</v-btn>
+          </v-hover>
+          </div>
+          <div class="buttom_section">
+            <v-btn plain height="68"  class="icon_holder" icon v-for="(icon , index) in icons" :key="index">
+              <img class="b_icon" :src="icon.img" alt=""
+            />
+            </v-btn>
+          </div>
         </div>
       </v-col>
     </v-row>
