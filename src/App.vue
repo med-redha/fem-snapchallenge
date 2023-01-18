@@ -74,6 +74,52 @@
     >
     <v-btn icon @click.stop="drawer = !drawer" ><v-icon large>mdi-close</v-icon></v-btn>
       <v-list dense>
+        <v-list-group
+          :value="true"
+          no-action
+          sub-group
+        >
+          <template v-slot:activator>
+            <v-list-item-content>
+              <v-list-item-title>Admin</v-list-item-title>
+            </v-list-item-content>
+          </template>
+
+          <v-list-item
+            v-for="([title, icon], i) in admins"
+            :key="i"
+            link
+          >
+            <v-list-item-title v-text="title"></v-list-item-title>
+
+            <v-list-item-icon>
+              <v-icon v-text="icon"></v-icon>
+            </v-list-item-icon>
+          </v-list-item>
+        </v-list-group>
+        <v-list-group
+          :value="true"
+          no-action
+          sub-group
+        >
+          <template v-slot:activator>
+            <v-list-item-content>
+              <v-list-item-title>Admin</v-list-item-title>
+            </v-list-item-content>
+          </template>
+
+          <v-list-item
+            v-for="([title, icon], i) in admins"
+            :key="i"
+            link
+          >
+            <v-list-item-title v-text="title"></v-list-item-title>
+
+            <v-list-item-icon>
+              <v-icon v-text="icon"></v-icon>
+            </v-list-item-icon>
+          </v-list-item>
+        </v-list-group>
         <v-list-item
          
         >
@@ -86,6 +132,10 @@
           </v-list-item-content>
         </v-list-item>
       </v-list>
+      <div class="account_btns">
+        <v-btn plain>Login</v-btn>
+        <v-btn outlined>Register</v-btn>
+      </div>
     </v-navigation-drawer>
     <v-main>
       <snap-challenge />
@@ -116,6 +166,17 @@ export default {
           { title: 'Users', icon: 'mdi-account-group-outline' },
         ],
         drawer: false,
+
+        admins: [
+        ['Management', 'mdi-account-multiple-outline'],
+        ['Settings', 'mdi-cog-outline'],
+      ],
+      cruds: [
+        ['Create', 'mdi-plus-outline'],
+        ['Read', 'mdi-file-outline'],
+        ['Update', 'mdi-update'],
+        ['Delete', 'mdi-delete'],
+      ],
       
   }),
 
