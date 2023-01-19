@@ -1,6 +1,6 @@
 <template>
   <div class="landingPage">
-    <v-row class=" hidden-md-and-down">
+    <v-row class=" hidden-sm-and-down">
       <v-col cols="12" md="6">
         <div class="content_sections">
           <div
@@ -37,7 +37,7 @@
         <div class="hero_section">
           <img
             class="hero_img"
-            src="../assets/images/image-hero-desktop.png"
+            src="../assets/images/image-hero-mobile.png"
             alt=""
           />
         </div>
