@@ -51,6 +51,7 @@
       absolute
       v-model="drawer"
       temporary
+      app
       right
       class="hidden-md-and-up "
     >
