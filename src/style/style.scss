@@ -10,8 +10,6 @@
       border-radius: 22px;
       text-align: center;
     }
-    
-    
   }
   .v-navigation-drawer {
     .v-navigation-drawer__content {
@@ -22,17 +20,16 @@
           justify-content: end;
         }
 
-          .v-list-group {
-            .v-list-group__header {
-              flex-direction: row-reverse;
-              flex: 0;
-              .v-list-item__content {
-                flex: unset;
-                margin: 0px 11px;
-              }
+        .v-list-group {
+          .v-list-group__header {
+            flex-direction: row-reverse;
+            flex: 0;
+            .v-list-item__content {
+              flex: unset;
+              margin: 0px 11px;
             }
           }
-        
+        }
       }
     }
   }
@@ -43,18 +40,6 @@
     .img {
       width: 50px;
       height: 50px;
-    }
-    .logo_holder {
-      .lg_btn {
-        .logo {
-        }
-      }
-    }
-    .menu_holder {
-    }
-    .page_btns {
-    }
-    .account_btns {
     }
   }
   .landingPage {
@@ -145,20 +130,6 @@
     display: flex;
     width: 100%;
     gap: 50px;
-    .logo_holder {
-      .lg_btn {
-        .logo {
-        }
-      }
-    }
-    .menu_holder {
-      .menu_draw {
-      }
-    }
-    .page_btns {
-    }
-    .account_btns {
-    }
   }
   .landingPage {
     .content_sections {
@@ -213,8 +184,6 @@
         gap: 50px;
         justify-content: space-evenly;
         margin: auto;
-        .v-btn {
-        }
       }
     }
     .hero_section {

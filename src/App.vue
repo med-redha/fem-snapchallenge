@@ -42,8 +42,8 @@
           <v-icon>mdi-menu</v-icon>
         </v-btn>
         <div class="account_btns && hidden-md-and-down">
-          <v-btn plain>Login</v-btn>
-          <v-btn outlined>register</v-btn>
+          <v-btn plain class="mr-4">Login</v-btn>
+          <v-btn outlined rounded height="48px" class="mr-4">register</v-btn>
         </div>
       </div>
     </v-app-bar>
@@ -132,7 +132,7 @@ export default {
     ],
     itemes: [
       { title: "History"  },
-      { title: "About"  },
+      { title: "Our Teams"  },
       { title: "Blog"  },
     ],
     drawer: false,
