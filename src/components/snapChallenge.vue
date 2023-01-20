@@ -55,8 +55,8 @@
             <v-btn class="mainSec_btn" :class="hover ? 'main_hover' : ''">{{ cont.mbtn }}</v-btn>
           </v-hover>
           </div>
-          <div class="buttom_section">
-            <v-btn plain height="68"  class="icon_holder" icon v-for="(icon , index) in icons" :key="index">
+          <div class="buttom_section my-6">
+            <v-btn plain   class="icon_holder mr-1" icon v-for="(icon , index) in icons" :key="index">
               <img class="b_icon" :src="icon.img" alt=""
             />
             </v-btn>

@@ -52,18 +52,16 @@
       v-model="drawer"
       temporary
       right
-      class="hidden-md-and-up"
+      class="hidden-md-and-up "
     >
-      
-      
       <v-list dense>
-        <v-list-item-centent>
+        
             <div class="close_draw">
         <v-btn icon @click.stop="drawer = !drawer"
         ><v-icon large>mdi-close</v-icon></v-btn
       >
     </div>
-          </v-list-item-centent>
+          
         <v-list-group :value="true" no-action sub-group >
  
           <template v-slot:activator  >
