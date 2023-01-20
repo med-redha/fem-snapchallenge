@@ -145,15 +145,10 @@ export default {
     ],
     company: [
       ["History"],
-      ["About" ],
+      ["Our Teams" ],
       ["Blog" ],
     ],
-    cruds: [
-      ["Create", "mdi-plus-outline"],
-      ["Read", "mdi-file-outline"],
-      ["Update", "mdi-update"],
-      ["Delete", "mdi-delete"],
-    ],
+   
   }),
 };
 </script>
