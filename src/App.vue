@@ -48,15 +48,12 @@
       </div>
     </v-app-bar>
     <v-navigation-drawer
-      absolute
       v-model="drawer"
       temporary
       app
       right
-      class="hidden-md-and-up "
     >
       <v-list dense>
-        
             <div class="close_draw">
         <v-btn icon @click.stop="drawer = !drawer"
         ><v-icon large>mdi-close</v-icon></v-btn
